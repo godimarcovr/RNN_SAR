@@ -52,7 +52,7 @@ if __name__ == '__main__':
     argparser.add_argument('-p', '--prime_str', type=str, default='A')
     argparser.add_argument('-l', '--predict_len', type=int, default=100)
     argparser.add_argument('-t', '--temperature', type=float, default=0.8)
-    argparser.add_argument('--cuda', action='store_true', default=True)
+    argparser.add_argument('--cuda', action='store_true', default=False)
     args = argparser.parse_args()
 
     decoder = torch.load(args.filename)
